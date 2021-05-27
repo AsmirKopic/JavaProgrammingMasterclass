@@ -25,7 +25,13 @@ public class HealthyBurger extends Hamburger {
         double hamburgerPrice = super.itemizeHamburger();
         if (this.healthyExtra1Name != null){
             hamburgerPrice += healthyExtra1Price;
+            System.out.println("Added " + this.healthyExtra1Name + " with price of extra " + this.healthyExtra1Price);
         }
+        if (this.healthyExtra2Name != null){
+            hamburgerPrice += healthyExtra2Price;
+            System.out.println("Added " + this.healthyExtra2Name + " with price of extra " + this.healthyExtra2Price);
+        }
+        return hamburgerPrice;
     }
 }
 

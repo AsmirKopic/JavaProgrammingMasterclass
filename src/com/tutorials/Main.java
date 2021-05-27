@@ -12,7 +12,12 @@ public class Main {
         hamburger.addHamburgerAddition1("Cheese", 3.55);
         hamburger.addHamburgerAddition2("Tomato", 2.35);
         hamburger.addHamburgerAddition3(" Random", 4.67);
-        hamburger.itemizeHamburger();
+        // hamburger.itemizeHamburger();
+
+        HealthyBurger healthyBurger = new HealthyBurger("Chicken",10.12);
+        healthyBurger.addHealthAddition1("Cheese 4", 4.56);
+        healthyBurger.addHealthAddition2("Tomato special", 4.16);
+        System.out.println("Total healthy burger price is " + healthyBurger.itemizeHamburger());
 
 
     }
