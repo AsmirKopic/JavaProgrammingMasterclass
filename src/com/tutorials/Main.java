@@ -19,6 +19,12 @@ public class Main {
         healthyBurger.addHealthAddition2("Tomato special", 4.16);
         System.out.println("Total healthy burger price is " + healthyBurger.itemizeHamburger());
 
+        DeluxeBurger db = new DeluxeBurger();
+        db.itemizeHamburger();
+
+        db.addHamburgerAddition1("nest", 4.5);
+
+
 
     }
 
