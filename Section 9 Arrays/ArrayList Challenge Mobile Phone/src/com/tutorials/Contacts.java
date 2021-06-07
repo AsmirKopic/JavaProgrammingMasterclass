@@ -24,9 +24,8 @@ public class Contacts {
 
     @Override
     public String toString() {
-        return "Contact{" +
-                "name='" + name + '\'' +
-                ", phone=" + phone +
-                '}';
+        return "Contact: " +
+                "name='" + this.name + '\'' +
+                ", phone=" + this.phone +' ';
     }
 }
