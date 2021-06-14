@@ -36,7 +36,7 @@ public class Main {
     albums.get(1).addToPlaylist(3, playList);
     albums.get(1).addToPlaylist(34, playList);  // Does not exist
 
-
+    play(playList);
 
 
 
@@ -114,11 +114,15 @@ public class Main {
                     break;
                 case 5:
                     printMenu();
-
-
-
-
-
+                case 6:
+                    if (playlist.size() > 0){
+                        listIterator.remove();
+                    } if (listIterator.hasNext()){
+                    System.out.println("Now playing " + listIterator.next());
+                } else if(listIterator.hasPrevious()){
+                    System.out.println("Now playing " + listIterator.previous());
+                }
+                break;
             }
         }
 
@@ -137,7 +141,8 @@ public class Main {
                         "2 - to play previous song\n" +
                         "3 - to reply the current song\n" +
                         "4 - list songs in the playlist\n " +
-                        "5 - print menu");
+                        "5 - print menu" +
+                        "6 - delete current song from playlist.");
     }
 
 }
