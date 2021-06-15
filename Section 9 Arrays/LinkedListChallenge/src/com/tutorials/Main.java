@@ -1,6 +1,6 @@
 package com.tutorials;
 
-import java.beans.beancontext.BeanContextServiceAvailableEvent;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.ListIterator;
@@ -29,17 +29,14 @@ public class Main {
 
     LinkedList<Song> playList = new LinkedList<Song>();
     albums.get(0).addToPlaylist("Track 1", playList);
-    albums.get(0).addToPlaylist("Track 8", playList);
+    albums.get(0).addToPlaylist("Track 3", playList);
     albums.get(0).addToPlaylist("Track 25", playList);  // Does not exist
-    albums.get(1).addToPlaylist(9, playList);
-    albums.get(1).addToPlaylist(8, playList);
-    albums.get(1).addToPlaylist(3, playList);
+    albums.get(1).addToPlaylist(1, playList);
+    albums.get(1).addToPlaylist(4, playList);
+    albums.get(1).addToPlaylist(6, playList);
     albums.get(1).addToPlaylist(34, playList);  // Does not exist
 
     play(playList);
-
-
-
 
     }
     public static void play(LinkedList<Song> playlist){
@@ -125,23 +122,20 @@ public class Main {
                 break;
             }
         }
-
     }
     private static void printList(LinkedList<Song> playlist){
         for (Song song: playlist) {
             System.out.println(song);
         }
-
-
     }
     private static void printMenu(){
-        System.out.println("Available actions \nPress" +
+        System.out.println("Available actions \nPress " +
                         "0 - to Quit\n" +
                         "1 - to play next song\n" +
                         "2 - to play previous song\n" +
                         "3 - to reply the current song\n" +
-                        "4 - list songs in the playlist\n " +
-                        "5 - print menu" +
+                        "4 - list songs in the playlist\n" +
+                        "5 - print menu\n" +
                         "6 - delete current song from playlist.");
     }
 
