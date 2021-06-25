@@ -15,6 +15,8 @@ public class Series {
         }
         return fact;
     }
+
+    // fibonacci method implementation
     public static long fibonacci(int n){
         if (n == 0){
             return 0;
@@ -31,4 +33,6 @@ public class Series {
         }
         return fib;
     }
+
+
 }
