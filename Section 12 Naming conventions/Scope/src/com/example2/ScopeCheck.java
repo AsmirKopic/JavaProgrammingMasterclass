@@ -18,6 +18,7 @@ public class ScopeCheck {
         }
     }
 
+    // checking scope for Inner Class
     public class InnerClass{
         public int privateVar = 3;
 
@@ -30,5 +31,5 @@ public class ScopeCheck {
             }
         }
     }
-    
+
 }
