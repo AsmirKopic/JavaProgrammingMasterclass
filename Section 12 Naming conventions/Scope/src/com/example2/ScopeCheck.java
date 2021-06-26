@@ -25,6 +25,7 @@ public class ScopeCheck {
         public InnerClass() {
             System.out.println("InnerClass called, privateVar is " + privateVar);
         }
+        // check for timesTwo method in InnerClass
         public void timesTwo(){
             for (int i = 0; i < 10; i++) {
                 System.out.println(i + " times two is " + i * privateVar);
