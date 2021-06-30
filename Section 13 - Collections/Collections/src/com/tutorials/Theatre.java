@@ -16,8 +16,14 @@ public class Theatre {
                 Seat seat = new Seat(row + String.format("%2d", seatNum));
                 seats.add(seat);
             }
-            
         }
-
     }
+
+    public String getTheatreName() {
+        return theatreName;
+    }
+    public boolean reserveSeat(String seatNumber){
+        Seat requestedSeat = null;
+    }
+
 }
