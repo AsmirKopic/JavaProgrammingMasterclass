@@ -1,6 +1,7 @@
 package com.tutorials;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -20,26 +21,21 @@ public class Main {
         locations.get(1).addExit("E", 3);
         locations.get(1).addExit("S", 4);
         locations.get(1).addExit("N", 5);
-        locations.get(1).addExit("Q", 0);
+       // locations.get(1).addExit("Q", 0); // added to constructor
 
         locations.get(2).addExit("N", 5);
-        locations.get(2).addExit("Q", 0);
+       // locations.get(2).addExit("Q", 0);
 
         locations.get(3).addExit("W", 1);
-        locations.get(3).addExit("Q", 0);
+      //  locations.get(3).addExit("Q", 0);
 
         locations.get(4).addExit("N", 1);
         locations.get(4).addExit("W", 2);
-        locations.get(4).addExit("Q", 0);
+      //  locations.get(4).addExit("Q", 0);
 
         locations.get(5).addExit("S", 1);
         locations.get(5).addExit("W", 2);
-        locations.get(5).addExit("Q", 0);
-
-
-
-
-
+      //  locations.get(5).addExit("Q", 0);
 
         int loc = 1;
         while (true){
@@ -47,9 +43,20 @@ public class Main {
             if (loc == 0){
                 break;
             }
-            loc = scanner.nextInt();
-            if (!locations.containsKey(loc)){
-                System.out.println("You cannot go into that direction.");
+
+            Map<String, Integer> exits = locations.get(loc).getExits();
+            System.out.println("Available exits are ");
+            for (String exit : exits.keySet()) {
+                System.out.print(exit + " , ");
+            }
+            System.out.println();
+
+            String direction = scanner.nextLine().toUpperCase();
+
+            if (exits.containsKey(direction)){
+                loc = exits.get(direction);
+            } else {
+                System.out.println("You cannot go to that direction");
             }
         }
 
