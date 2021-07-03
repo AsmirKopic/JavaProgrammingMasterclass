@@ -14,7 +14,7 @@ public class Main {
 
         Collections.shuffle(seatCopy);
         printList(seatCopy);
-        
+
     }
     public static void printList(List<Theatre.Seat> list){
         for (Theatre.Seat seat : list) {
