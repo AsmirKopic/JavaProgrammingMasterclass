@@ -37,28 +37,41 @@ public class Main {
         locations.get(5).addExit("W", 2);
       //  locations.get(5).addExit("Q", 0);
 
-        int loc = 1;
-        while (true){
-            System.out.println(locations.get(loc).getDescription());
-            if (loc == 0){
-                break;
-            }
+//        int loc = 1;
+//        while (true){
+//            System.out.println(locations.get(loc).getDescription());
+//            if (loc == 0){
+//                break;
+//            }
+//
+//            Map<String, Integer> exits = locations.get(loc).getExits();
+//            System.out.println("Available exits are ");
+//            for (String exit : exits.keySet()) {
+//                System.out.print(exit + " , ");
+//            }
+//            System.out.println();
+//
+//            String direction = scanner.nextLine().toUpperCase();
+//
+//            if (exits.containsKey(direction)){
+//                loc = exits.get(direction);
+//            } else {
+//                System.out.println("You cannot go to that direction");
+//            }
+//        }
+//
 
-            Map<String, Integer> exits = locations.get(loc).getExits();
-            System.out.println("Available exits are ");
-            for (String exit : exits.keySet()) {
-                System.out.print(exit + " , ");
-            }
-            System.out.println();
-
-            String direction = scanner.nextLine().toUpperCase();
-
-            if (exits.containsKey(direction)){
-                loc = exits.get(direction);
-            } else {
-                System.out.println("You cannot go to that direction");
-            }
+        // split method intro
+        String[] road = "You are standing at the end of a road before a small brick building".split(" ");
+        for (String i : road){
+            System.out.println(i);
         }
+
+        String[] building = "You are inside a building, a well house for a small spring".split(",");
+        for (String i : building){
+            System.out.println(i);
+        }
+
 
 
     }
