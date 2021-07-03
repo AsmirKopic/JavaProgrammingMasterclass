@@ -26,6 +26,6 @@ public class Location {
     }
 
     public Map<String, Integer> getExits() {
-        return new HashMap<String, Integer>(exits); // Num 6. 12:30 
+        return new HashMap<String, Integer>(exits);
     }
 }
