@@ -13,4 +13,20 @@ public final class HeavenlyBody {
         this.orbitPeriod = orbitPeriod;
         this.satellites = new HashSet<>();
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getOrbitPeriod() {
+        return orbitPeriod;
+    }
+    public boolean addMoon(HeavenlyBody moon){
+        return this.satellites.add(moon);
+    }
+
+    public Set<HeavenlyBody> getSatellites() {
+        return new HashSet<>(this.satellites);
+    }
+
 }
