@@ -34,8 +34,7 @@ public class MyLinkedList implements NodeList {
                 }
             } else if (currentItem > 0) {
                 // newItem is less, insert before  ..... code to be continue
-                // code here !
-                // ********
+
             }
         }
 
