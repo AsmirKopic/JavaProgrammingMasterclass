@@ -1,6 +1,7 @@
 package com.tutorials;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 public final class HeavenlyBody {
@@ -29,4 +30,16 @@ public final class HeavenlyBody {
         return new HashSet<>(this.satellites);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        HeavenlyBody body = (HeavenlyBody) o;
+        return Double.compare(body.orbitPeriod, orbitPeriod) == 0 && name.equals(body.name) && satellites.equals(body.satellites);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, orbitPeriod, satellites);
+    }
 }
