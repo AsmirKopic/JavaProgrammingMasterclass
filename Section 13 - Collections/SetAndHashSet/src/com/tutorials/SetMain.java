@@ -18,5 +18,12 @@ public class SetMain {
         union.addAll(cubes);
         System.out.println("union contains " + union.size() + " elements");
 
+        Set<Integer> intersection = new HashSet<>(squares);
+        intersection.retainAll(cubes);
+        System.out.println("Intersection contains " + intersection.size() + " elements.");
+        for (int i : intersection){
+            System.out.println(i + " is the square of " + Math.sqrt(i) + " and the cube of " + Math.cbrt(i));
+        }
+
     }
 }
