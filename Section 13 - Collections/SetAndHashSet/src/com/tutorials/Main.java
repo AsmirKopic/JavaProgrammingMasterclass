@@ -11,7 +11,7 @@ public class Main {
     private static Set<HeavenlyBody> planets = new HashSet<>();
 
     public static void main(String[] args) {
-	// write your code here
+
         HeavenlyBody temp = new HeavenlyBody("Mercury", 88);
         solarSystem.put(temp.getName(),temp);
         planets.add(temp);

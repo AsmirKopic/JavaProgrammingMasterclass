@@ -31,15 +31,20 @@ public final class HeavenlyBody {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        HeavenlyBody body = (HeavenlyBody) o;
-        return Double.compare(body.orbitPeriod, orbitPeriod) == 0 && name.equals(body.name) && satellites.equals(body.satellites);
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || (obj.getClass() != this.getClass())){
+            return false;
+        }
+        String objName = ((HeavenlyBody) obj).getName();
+        return this.name.equals(objName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, orbitPeriod, satellites);
+        System.out.println("HashCode called!");
+        return this.name.hashCode() + 57;
     }
 }
