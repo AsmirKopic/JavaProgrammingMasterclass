@@ -104,7 +104,5 @@ public class Main {
             System.out.println(planet);
             // System.out.println(planet.getName() + " : " + planet.getOrbitPeriod());
         }
-
-        // 18. Set Challenge .. 9min
     }
 }

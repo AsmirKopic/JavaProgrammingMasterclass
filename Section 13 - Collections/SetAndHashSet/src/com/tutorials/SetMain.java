@@ -34,9 +34,5 @@ public class SetMain {
         for (String s: words){
             System.out.println(s);
         }
-
-
-
-
     }
 }
