@@ -25,7 +25,19 @@ public class StockList {
     }
 
     public int sellStock(String item, int quantity){
+        if (list.containsKey(item)){
+            StockItem inStock = list.get(item);
 
-        // continue here !!
+            if (inStock.getQuantityStock() >= quantity && quantity > 0){
+                inStock.adjustStock(-(quantity));
+                System.out.println("Item sold. Current item stock for item:  " + list.get(item).getName() + " is: " + inStock.getQuantityStock());
+                return inStock.getQuantityStock();
+            } else {
+                System.out.println("No quantity on stock for item " + inStock.getName() + " just left " + inStock.getQuantityStock());
+            }
+        } else {
+            System.out.println("No that item in stock!");
+        }
+        return 0;
     }
 }
