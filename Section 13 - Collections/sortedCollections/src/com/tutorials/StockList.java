@@ -23,4 +23,9 @@ public class StockList {
         }
         return 0;
     }
+
+    public int sellStock(String item, int quantity){
+
+        // continue here !!
+    }
 }
