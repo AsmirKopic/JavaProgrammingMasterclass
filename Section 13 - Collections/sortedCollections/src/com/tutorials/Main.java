@@ -31,23 +31,16 @@ public class Main {
         for (String s: stockList.items().keySet()){
             System.out.println(s);
         }
-
         Basket myBasket = new Basket("Asmir");
-        sellItem(myBasket, "car", 1);
-        System.out.println(myBasket);
 
-        sellItem(myBasket, "car", 1);
-        System.out.println(myBasket);
+        sellItem(myBasket, "vase", 21);
+        sellItem(myBasket, "towel", 13);
 
-        sellItem(myBasket, "car", 1);
-        sellItem(myBasket, "spanner", 4);
-        System.out.println(myBasket);
-
-        sellItem(myBasket, "juice", 4);
-        sellItem(myBasket, "cup", 45);
-        sellItem(myBasket, "bread", 2);
-        System.out.println(myBasket);
         System.out.println(stockList);
+
+
+
+
 
 
 
