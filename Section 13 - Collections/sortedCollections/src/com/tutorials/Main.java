@@ -41,11 +41,6 @@ public class Main {
         System.out.println(stockList);
 
 
-
-
-
-
-
     }
     public static int sellItem(Basket basket, String item, int quantity){
         // retrieve item from stock list
@@ -78,7 +73,4 @@ public class Main {
         }
         basket.clearBasket();
     }
-
-
-
 }
