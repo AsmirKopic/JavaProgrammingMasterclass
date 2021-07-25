@@ -1,5 +1,7 @@
 package com.tutorials;
 
+import java.util.Map;
+
 public class Main {
 
     private static StockList stockList = new StockList();
@@ -69,7 +71,13 @@ public class Main {
         }
         return 0;
     }
-    
+
+    public static void checkOut(Basket basket){
+        for (Map.Entry<StockItem, Integer> item : basket.Items().entrySet()){
+            stockList.sellStock(item.getKey().getName(), item.getValue());
+        }
+        basket.clearBasket();
+    }
 
 
 
