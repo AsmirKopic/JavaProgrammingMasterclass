@@ -57,7 +57,14 @@ public class StockItem implements Comparable<StockItem> {
         }
         return 0;
     }
-
+    public int finaliseStock(int quantity){
+        if (quantity <= reserved){
+            quantityStock -= quantity;
+            reserved -= quantity;
+            return quantity;
+        }
+        return 0;
+    }
 
     @Override
     public boolean equals(Object obj) {
@@ -92,6 +99,6 @@ public class StockItem implements Comparable<StockItem> {
 
     @Override
     public String toString() {
-        return this.name + ", price: " + this.price;
+        return this.name + ", price: " + this.price + ". Reserved: " + this.reserved;
     }
 }
