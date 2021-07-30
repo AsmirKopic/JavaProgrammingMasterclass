@@ -12,9 +12,9 @@ public class Locations implements Map<Integer, Location> {
         try(FileWriter locFile = new FileWriter("locations.txt");
             FileWriter dirFile = new FileWriter("directions.txt")){
             for (Location location : locations.values()){
-                locFile.write(location.getLocationID() + ", " + location.getDescription() + "\n");
+                locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
                 for (String direction : location.getExits().keySet()){
-                    dirFile.write(location.getLocationID() + ", " + direction + ", " + location.getExits().get(direction) + "\n");
+                    dirFile.write(location.getLocationID() + "," + direction + "," + location.getExits().get(direction) + "\n");
                 }
             }
         }
@@ -59,23 +59,30 @@ public class Locations implements Map<Integer, Location> {
         try {
             scanner = new Scanner(new BufferedReader(new FileReader("directions.txt")));
             scanner.useDelimiter(",");
-            while (scanner.hasNextLine()){
-                int loc = scanner.nextInt();
-                scanner.skip(scanner.delimiter());
-                String direction = scanner.next();
-                scanner.skip(scanner.delimiter());
-                String dest = scanner.nextLine();
-                int destination = Integer.parseInt(dest);
-                System.out.println(loc + " : " + direction + " : " + destination);
+            while(scanner.hasNextLine()) {
+//                int loc = scanner.nextInt();
+//                scanner.skip(scanner.delimiter());
+//                String direction = scanner.next();
+//                scanner.skip(scanner.delimiter());
+//                String dest = scanner.nextLine();
+//                int destination = Integer.parseInt(dest);
+                String input = scanner.nextLine();
+                String[] data = input.split(",");
+                int loc = Integer.parseInt(data[0]);
+                String direction = data[1];
+                int destination = Integer.parseInt(data[2]);
+
+                System.out.println(loc + ":" + direction + ":" + destination);
                 Location location = locations.get(loc);
-                // continue ..
+                location.addExit(direction, destination);
             }
-
-
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if(scanner != null) {
+                scanner.close();
+            }
         }
-
-
-
 
 //        * data is now readable from files
 //        Map<String, Integer> tempExit = new HashMap<String, Integer>();

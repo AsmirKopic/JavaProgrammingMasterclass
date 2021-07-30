@@ -26,8 +26,7 @@ public class Main {
         vocabulary.put("EAST", "E");
         vocabulary.put("SOUTH", "S");
         vocabulary.put("WEST", "W");
-
-
+        
         int loc = 1;
         while (true){
             System.out.println(locations.get(loc).getDescription());
@@ -38,7 +37,7 @@ public class Main {
             Map<String, Integer> exits = locations.get(loc).getExits();
             System.out.println("Available exits are ");
             for (String exit : exits.keySet()) {
-                System.out.print(exit + " , ");
+                System.out.print(exit + ",");
             }
             System.out.println();
 
