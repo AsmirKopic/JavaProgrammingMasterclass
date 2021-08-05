@@ -20,6 +20,7 @@ public class Main {
 
         Thread myRunnableThread = new Thread(new MyRunnable());
         myRunnableThread.start();
+        anotherThread.interrupt();
 
         System.out.println("Hello from main thread again");
 
