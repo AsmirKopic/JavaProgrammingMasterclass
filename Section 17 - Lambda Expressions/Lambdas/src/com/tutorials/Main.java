@@ -32,7 +32,14 @@ public class Main {
 //        }
         employees.forEach(name -> System.out.println(name.getName()));
 
-        UpperConcat uc = (String s1, String s2) -> s1.toUpperCase() + s2.toUpperCase();
+        UpperConcat uc = (s1, s2) -> {
+            String result = s1.toUpperCase() + s2.toUpperCase();
+            return result;
+        };
+
+
+        String sillyString = doStringStuff(uc, employees.get(0).getName(), employees.get(1).getName());
+        System.out.println(sillyString);
 
     }
     public final static String doStringStuff(UpperConcat uc, String s1, String s2){
