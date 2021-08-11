@@ -1,5 +1,6 @@
 package com.tutorials;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -8,10 +9,10 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        new Thread(() -> {
-            System.out.println("Printing from the runnable!");
-            System.out.println("Print line 2");
-        }).start();
+//        new Thread(() -> {
+//            System.out.println("Printing from the runnable!");
+//            System.out.println("Print line 2");
+//        }).start();
 
         Employee john = new Employee("John", 41);
         Employee tim = new Employee("Tim", 21);
@@ -24,22 +25,14 @@ public class Main {
         employees.add(snow);
         employees.add(jack);
 
-       // sort names
-        Collections.sort(employees, Comparator.comparing(Employee::getName));
-
 //        for (Employee employee : employees){
-//            System.out.println(employee.getName());
+//            System.out.println(employee.getName() + " " + employee.getAge());
+//            new Thread(() ->System.out.println(employee.getAge())).start();
 //        }
-        employees.forEach(name -> System.out.println(name.getName()));
-
-        UpperConcat uc = (s1, s2) -> {
-            String result = s1.toUpperCase() + s2.toUpperCase();
-            return result;
-        };
-
-
-        String sillyString = doStringStuff(uc, employees.get(0).getName(), employees.get(1).getName());
-        System.out.println(sillyString);
+        employees.forEach(employee -> {
+            System.out.println(employee.getName());
+            System.out.println(employee.getAge());
+        });
 
     }
     public final static String doStringStuff(UpperConcat uc, String s1, String s2){
@@ -75,4 +68,3 @@ class Employee{
 interface UpperConcat {
     public String upperAndConcat(String s1, String s2);
 }
-
