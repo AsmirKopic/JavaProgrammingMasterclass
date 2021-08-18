@@ -14,6 +14,9 @@ public class BankAccountTest {
 
     @org.junit.Test
     public void withdraw() {
+        BankAccount account = new BankAccount("Asmir", "Kopic", 1000, BankAccount.CHECKING);
+        double balance = account.withdraw(200, true);
+        assertEquals(800, balance, 0);
     }
 
     @org.junit.Test
@@ -36,7 +39,7 @@ public class BankAccountTest {
         assertTrue(account.isChecking());
     }
 
-
+    // continue on vid 7
 }
 
 
