@@ -42,7 +42,7 @@ public class BankAccountTest {
     }
 
     @org.junit.Test
-    public void getBalance_deposit() {
+    public void getBalance_deposit() throws Exception{
         account.deposit(200, true);
         assertEquals(1200, account.getBalance(), 0);
     }
