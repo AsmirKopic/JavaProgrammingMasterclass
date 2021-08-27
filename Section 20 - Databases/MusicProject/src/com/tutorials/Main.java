@@ -1,8 +1,16 @@
 package com.tutorials;
 
+import com.tutorials.model.Datasource;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Datasource datasource = new Datasource();
+        if (!datasource.open()) {
+            System.out.println("Cant open datasource");
+        }
+        datasource.close();
     }
+
+
 }
