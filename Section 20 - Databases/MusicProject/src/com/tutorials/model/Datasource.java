@@ -67,9 +67,9 @@ public class Datasource {
     public List<String> queryAlbumsForArtis(String artist){
 
         try(Statement statement = conn.createStatement();
-            ResultSet results = statement.executeQuery("SELECT albums.name FROM" + TABLE_ALBUM +
-                    "INNER JOIN artists ON albums.artist = artists._id" +
-                    "WHERE artists.name = \"" + artist + "\"" +
+            ResultSet results = statement.executeQuery("SELECT albums.name FROM albums \n" +
+                    "INNER JOIN artists ON albums.artist = artists._id \n" +
+                    "WHERE artists.name = \"" + artist + "\" \n" +
                     "ORDER BY albums.name COLLATE NOCASE ASC")) {
 
             List<String> albums = new ArrayList<>();
@@ -79,7 +79,42 @@ public class Datasource {
             return albums;
         } catch (SQLException e){
             System.out.println("Query failed " + e.getMessage());
+            e.printStackTrace();
             return null;
+        }
+    }
+
+    public List<SongArtist> queryArtistsForSong(String songName){
+        try(Statement statement = conn.createStatement();
+            ResultSet results = statement.executeQuery("SELECT artists.name, albums.name, songs.track FROM songs \n" +
+                    "INNER JOIN albums ON songs.album = albums._id \n" +
+                    "INNER JOIN artists ON albums.artist = artists._id\n" +
+                    "WHERE songs.title = \"" + songName +"\"\n" +
+                    "ORDER BY artists.name, albums.name COLLATE NOCASE ASC")) {
+            List<SongArtist> songs = new ArrayList<>();
+            while (results.next()){
+                SongArtist songArtist = new SongArtist();
+                songArtist.setArtistName(results.getString(1));
+                songArtist.setAlbumName(results.getString(2));
+                songArtist.setTrack(results.getInt(3));
+                songs.add(songArtist);
+            }
+            return songs;
+        } catch (SQLException e){
+            System.out.println("Query failed " + e.getMessage());
+            return null;
+        }
+    }
+
+    public int getCount(String table){
+        String sql = "SELECT COUNT(*) FROM " + table;
+        try(Statement statement = conn.createStatement();
+            ResultSet results = statement.executeQuery(sql)) {
+            int count = results.getInt(1);
+            return count;
+        } catch (SQLException e){
+            System.out.println("Query failed " + e.getMessage());
+            return -1;
         }
     }
 
