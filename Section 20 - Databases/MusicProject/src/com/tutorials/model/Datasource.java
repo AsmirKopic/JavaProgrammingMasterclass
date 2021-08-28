@@ -9,7 +9,7 @@ public class Datasource {
     public static final String DB_NAME = "music.db";
     public static final String CONNECTION_STRING = "jdbc:sqlite:C:\\Users\\HP\\Desktop\\Java Programms\\MusicProject\\" + DB_NAME;
 
-    public static final String TABLE_ALBUM = "table";
+    public static final String TABLE_ALBUM = "albums";
     public static final String COLUMN_ALBUM_ID = "_id";
     public static final String COLUMN_ALBUM_NAME = "name";
     public static final String COLUMN_ALBUM_ARTIST = "artist";
@@ -45,14 +45,9 @@ public class Datasource {
     }
 
     public List<Artist> queryArtist(){
-//        Statement statement = null;
-//        ResultSet results = null;
 
         try(Statement statement = conn.createStatement();
             ResultSet results = statement.executeQuery("SELECT * FROM " + TABLE_ARTISTS)){
-
-//            statement = conn.createStatement();
-//            results = statement.executeQuery("SELECT * FROM " + TABLE_ARTISTS);
 
             List<Artist> artists = new ArrayList<>();
             while (results.next()){
@@ -66,23 +61,30 @@ public class Datasource {
         } catch (SQLException e){
             System.out.println("Query failed " + e.getMessage());
             return null;
-        } finally {
-            try{
-                if (results != null){
-                    results.close();
-                }
-            } catch (SQLException e){
-                System.out.println("Error closing ResultSet " + e.getMessage() );
-            }
-            try{
-                if (statement != null){
-                    statement.close();
-                }
-            } catch (SQLException e){
-                System.out.println("Error closing Statement" + e.getMessage());
-            }
-
         }
     }
 
+    public List<String> queryAlbumsForArtis(String artist){
+
+        try(Statement statement = conn.createStatement();
+            ResultSet results = statement.executeQuery("SELECT albums.name FROM" + TABLE_ALBUM +
+                    "INNER JOIN artists ON albums.artist = artists._id" +
+                    "WHERE artists.name = \"" + artist + "\"" +
+                    "ORDER BY albums.name COLLATE NOCASE ASC")) {
+
+            List<String> albums = new ArrayList<>();
+            while (results.next()){
+                albums.add(results.getString(1));
+            }
+            return albums;
+        } catch (SQLException e){
+            System.out.println("Query failed " + e.getMessage());
+            return null;
+        }
+    }
+
+
+
+
 }
+
