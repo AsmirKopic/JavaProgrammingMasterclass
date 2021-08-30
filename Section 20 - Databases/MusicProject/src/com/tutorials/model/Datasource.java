@@ -4,6 +4,7 @@ import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Datasource {
     public static final String DB_NAME = "music.db";
@@ -118,8 +119,18 @@ public class Datasource {
         }
     }
 
-
-
+    public void insertArtist(String name) throws SQLException {
+        String query = "INSERT INTO artists (name) VALUES (?)";
+        try {
+            PreparedStatement myStmt = conn.prepareStatement(query);
+            myStmt.setString(1, name.trim());
+            int res = myStmt.executeUpdate();
+            System.out.println(name.trim() + " added into database.");
+            System.out.println(res + " records inserted.");
+        } catch (SQLException e) {
+            System.out.println("Query failed" + e.getMessage());
+        }
+    }
 
 }
 

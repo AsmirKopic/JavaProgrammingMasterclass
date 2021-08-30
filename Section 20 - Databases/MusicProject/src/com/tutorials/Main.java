@@ -4,12 +4,14 @@ import com.tutorials.model.Artist;
 import com.tutorials.model.Datasource;
 import com.tutorials.model.SongArtist;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         Datasource datasource = new Datasource();
         if (!datasource.open()) {
             System.out.println("Cant open datasource");
@@ -47,6 +49,14 @@ public class Main {
 
         //Count number of songs in songs table
         System.out.println("Number of songs is " + datasource.getCount("songs") );
+
+        //Insert into database
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter artist name");
+        String name = input.nextLine();
+        datasource.insertArtist(name);
+
+
 
         //close connection
         datasource.close();
