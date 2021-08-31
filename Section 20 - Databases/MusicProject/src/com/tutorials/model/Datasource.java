@@ -225,5 +225,27 @@ public class Datasource {
         }
     }
 
+    private int insertSong(String title, String artist, String album, int track) throws SQLException {
+
+        int artisId = insertArtist(artist);
+        int albumId = insertAlbum(album, artisId);
+        insertIntoSongs.setInt(1, track);
+        insertIntoSongs.setString(2, title);
+        insertIntoSongs.setInt(3, albumId);
+
+        int affectedRows = insertIntoSongs.executeUpdate();
+        if (affectedRows != 1) {
+            throw new SQLException("Couldn't insert song.");
+        }
+
+        ResultSet generatedKeys = insertIntoSongs.getGeneratedKeys();
+        if (generatedKeys.next()) {
+            return generatedKeys.getInt(1);
+        } else {
+            throw new SQLException("Couldn't get id from song");
+        }
+    }
+
+
 }
 
