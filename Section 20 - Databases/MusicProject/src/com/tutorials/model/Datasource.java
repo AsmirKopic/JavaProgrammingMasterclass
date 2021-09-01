@@ -24,8 +24,7 @@ public class Datasource {
     public static final String COLUMN_SONG_TITLE = "title";
     public static final String COLUMN_SONG_ALBUM = "album";
 
-    public static final String INSERT_ARTIST = "INSERT INTO " + TABLE_ARTISTS +
-                                                '(' + COLUMN_ARTIST_NAME + ") VALUES (?)";
+    public static final String INSERT_ARTIST = "INSERT INTO artists (name) VALUES (?)";
     public static final String INSERT_ALBUMS = "INSERT INTO " + TABLE_ALBUMS +
                                                 '(' + COLUMN_ALBUM_NAME + ", " + COLUMN_ALBUM_ARTIST + ") VALUES(?, ?)";
     public static final String INSERT_SONGS = "INSERT INTO " + TABLE_SONGS +
@@ -174,30 +173,30 @@ public class Datasource {
 //            System.out.println("Query failed" + e.getMessage());
 //        }
 //    }
-    private int insertArtist(String name) throws SQLException {
 
-        // Check if artist is already in database
-        queryArtist.setString(1, name);
-        ResultSet results = queryArtist.executeQuery();
-        if (results.next()) {
-            return results.getInt(1);
+private int insertArtist(String name) throws SQLException {
+
+    queryArtist.setString(1, name);
+    ResultSet results = queryArtist.executeQuery();
+    if(results.next()) {
+        return results.getInt(1);
+    } else {
+        // Insert the artist
+        insertIntoArtists.setString(1, name);
+        int affectedRows = insertIntoArtists.executeUpdate();
+
+        if(affectedRows != 1) {
+            throw new SQLException("Couldn't insert artist!");
+        }
+
+        ResultSet generatedKeys = insertIntoArtists.getGeneratedKeys();
+        if(generatedKeys.next()) {
+            return generatedKeys.getInt(1);
         } else {
-            // if artist is not into database, insert artist
-            insertIntoArtists.setString(1, name);
-            int affectedRows = insertIntoArtists.executeUpdate();
-
-            if (affectedRows != 1) {
-                throw new SQLException("Couldn't insert artist.");
-            }
-
-            ResultSet generatedKeys = insertIntoArtists.getGeneratedKeys();
-            if(generatedKeys.next()){
-                return generatedKeys.getInt(1);
-            } else {
-                throw new SQLException("Couldn't get id from artist");
-            }
+            throw new SQLException("Couldn't get _id for artist");
         }
     }
+}
 
     private int insertAlbum(String name,int artisId) throws SQLException {
 
@@ -225,27 +224,41 @@ public class Datasource {
         }
     }
 
-    private int insertSong(String title, String artist, String album, int track) throws SQLException {
+    public void insertSong(String title, String artist, String album, int track) {
 
-        int artisId = insertArtist(artist);
-        int albumId = insertAlbum(album, artisId);
-        insertIntoSongs.setInt(1, track);
-        insertIntoSongs.setString(2, title);
-        insertIntoSongs.setInt(3, albumId);
+        try {
+            conn.setAutoCommit(false);
 
-        int affectedRows = insertIntoSongs.executeUpdate();
-        if (affectedRows != 1) {
-            throw new SQLException("Couldn't insert song.");
-        }
+            int artistId = insertArtist(artist);
+            int albumId = insertAlbum(album, artistId);
+            insertIntoSongs.setInt(1, track);
+            insertIntoSongs.setString(2, title);
+            insertIntoSongs.setInt(3, albumId);
+            int affectedRows = insertIntoSongs.executeUpdate();
+            if(affectedRows == 1) {
+                conn.commit();
+            } else {
+                throw new SQLException("The song insert failed");
+            }
 
-        ResultSet generatedKeys = insertIntoSongs.getGeneratedKeys();
-        if (generatedKeys.next()) {
-            return generatedKeys.getInt(1);
-        } else {
-            throw new SQLException("Couldn't get id from song");
+        } catch(Exception e) {
+            System.out.println("Insert song exception: " + e.getMessage());
+            try {
+                System.out.println("Performing rollback");
+                conn.rollback();
+            } catch(SQLException e2) {
+                System.out.println("Oh boy! Things are really bad! " + e2.getMessage());
+            }
+        } finally {
+            try {
+                System.out.println("Resetting default commit behavior");
+                conn.setAutoCommit(true);
+            } catch(SQLException e) {
+                System.out.println("Couldn't reset auto-commit! " + e.getMessage());
+            }
+
         }
     }
-
 
 }
 

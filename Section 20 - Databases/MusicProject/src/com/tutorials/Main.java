@@ -18,13 +18,13 @@ public class Main {
         }
 
         //Print list of artists
-        List<Artist> artists = datasource.queryArtist();
-        if (artists == null) {
-            System.out.println("No artist in list");
-        }
-        for (Artist artist : artists) {
-            System.out.println("ID " + artist.getId() + " Artist name " + artist.getName());
-        }
+//        List<Artist> artists = datasource.queryArtist();
+//        if (artists == null) {
+//            System.out.println("No artist in list");
+//        }
+//        for (Artist artist : artists) {
+//            System.out.println("ID " + artist.getId() + " Artist name " + artist.getName());
+//        }
 
         System.out.println("___________________________________________________________________");
 
@@ -50,11 +50,17 @@ public class Main {
         //Count number of songs in songs table
         System.out.println("Number of songs is " + datasource.getCount("songs") );
 
-        //Insert into database
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please enter artist name");
-        String name = input.nextLine();
-        datasource.insertArtist(name);
+        //Insert song into database
+
+        System.out.println("Inserting song");
+
+            datasource.insertSong("NewSong", "NewArtist", "SomeNewAlbum", 1);
+
+
+
+
+
+
 
 
 
