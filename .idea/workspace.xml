@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6d52a3a1-8a29-4105-b361-31e28102ed02" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/EncapsulationChallange/EncapsulationChallange.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EncapsulationChallange1/EncapsulationChallange.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EncapsulationChallange/out/production/EncapsulationChallange/com/tutorials/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/EncapsulationChallange1/out/production/EncapsulationChallange/com/tutorials/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EncapsulationChallange/out/production/EncapsulationChallange/com/tutorials/Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/EncapsulationChallange1/out/production/EncapsulationChallange/com/tutorials/Printer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EncapsulationChallange/src/com/tutorials/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/EncapsulationChallange1/src/com/tutorials/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EncapsulationChallange/src/com/tutorials/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/EncapsulationChallange1/src/com/tutorials/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolymorphismChallenge/PolymorphismChallenge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Section 7 - OOP Part - Composition, Encapsulation, and Polymorphism/PolymorphismChallenge.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolymorphismChallenge/out/production/PolymorphismChallenge/com/tutorials/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolymorphismChallenge/out/production/PolymorphismChallenge/com/tutorials/Ford.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolymorphismChallenge/out/production/PolymorphismChallenge/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolymorphismChallenge/out/production/PolymorphismChallenge/com/tutorials/Mitsubishi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolymorphismChallenge/src/com/tutorials/Ford.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolymorphismChallenge/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reverse Array Challenge/Reverse Array Challenge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Section 8 - Arrays, Java inbuilt Lists, Autoboxing and Unboxing/Reverse Array Challenge.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reverse Array Challenge/out/production/Reverse Array Challenge/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reverse Array Challenge/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/AbstractClassesChallenge/AbstractClassesChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/AbstractClassesChallenge/src/com/tutorials/ListItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/AbstractClassesChallenge/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/AbstractClassesChallenge/src/com/tutorials/MyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/AbstractClassesChallenge/src/com/tutorials/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/AbstractClassesChallenge/src/com/tutorials/NodeList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/Abstraction.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/out/production/Abstraction/com/tutorials/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/out/production/Abstraction/com/tutorials/Bird.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/out/production/Abstraction/com/tutorials/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/out/production/Abstraction/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/out/production/Abstraction/com/tutorials/Parrot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/out/production/Abstraction/com/tutorials/Penguin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/src/com/tutorials/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/src/com/tutorials/Bird.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/src/com/tutorials/CanFly.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/src/com/tutorials/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/src/com/tutorials/Parrot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/Abstraction/src/com/tutorials/Penguin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/InterfacesChallenge/InterfacesChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/InterfacesChallenge/out/production/InterfacesChallenge/com/tutorials/ISaveable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/InterfacesChallenge/out/production/InterfacesChallenge/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/InterfacesChallenge/out/production/InterfacesChallenge/com/tutorials/Monster.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/InterfacesChallenge/out/production/InterfacesChallenge/com/tutorials/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/InterfacesChallenge/src/com/tutorials/ISaveable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/InterfacesChallenge/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/InterfacesChallenge/src/com/tutorials/Monster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/Interfaces/Interfaces/InterfacesChallenge/src/com/tutorials/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 10 Inner and Abstract classes &amp; Interfaces/gitkeep.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Section 10 -  Inner and Abstract classes &amp; Interfaces/gitkeep.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/AccessModifiers/AccessModifiers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/AccessModifiers/out/production/AccessModifiers/com/tutorials/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/AccessModifiers/out/production/AccessModifiers/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/AccessModifiers/src/com/tutorials/Accesible.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/AccessModifiers/src/com/tutorials/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/AccessModifiers/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Final/Final.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Final/out/production/Final/SomeClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Final/out/production/Final/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Final/out/production/Final/com/tutorials/Password.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Final/out/production/Final/com/tutorials/SomeClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Final/src/SomeClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Final/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Final/src/com/tutorials/Password.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Final/src/com/tutorials/SomeClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/PackageChallenge/PackageChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/PackageChallenge/out/artifacts/PackageChallenge_jar/PackageChallenge.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Section 12 - Naming conventions/PackageChallenge/out/artifacts/PackageChallenge_jar/PackageChallenge.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/PackageChallenge/out/production/PackageChallenge/com/example/mylibrary/Series.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/PackageChallenge/src/com/example/mylibrary/Series.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/PackageChallenge/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/PackageChallenge2/PackageChallenge2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/PackageChallenge2/out/production/PackageChallenge2/com/example2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/PackageChallenge2/src/com/example2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Scope/Scope.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Scope/out/production/Scope/com/example2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Scope/out/production/Scope/com/example2/ScopeCheck$InnerClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Scope/out/production/Scope/com/example2/ScopeCheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Scope/src/com/example2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Scope/src/com/example2/ScopeCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Static/Static.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Static/out/production/Static/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Static/out/production/Static/com/tutorials/StaticTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Static/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/Static/src/com/tutorials/StaticTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 12 Naming conventions/gitkeep.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Section 12 - Naming conventions/gitkeep.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/ArrayList Challenge Mobile Phone/ArrayList Challenge Mobile Phone.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/ArrayList Challenge Mobile Phone/ArrayList MobilePhone Challenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/ArrayList Challenge Mobile Phone/out/production/ArrayList MobilePhone Challenge/com/tutorials/Contacts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/ArrayList Challenge Mobile Phone/out/production/ArrayList MobilePhone Challenge/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/ArrayList Challenge Mobile Phone/out/production/ArrayList MobilePhone Challenge/com/tutorials/MobilePhone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/ArrayList Challenge Mobile Phone/src/com/tutorials/Contacts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/ArrayList Challenge Mobile Phone/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/ArrayList Challenge Mobile Phone/src/com/tutorials/MobilePhone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/Arrays challenge exercise/Arrays challenge exercise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/Arrays challenge exercise/Section 9 Arrays.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/Arrays challenge exercise/out/production/Section 9 Arrays/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/Arrays challenge exercise/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedList/LinkedList.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedList/out/production/LinkedList/com/tutorials/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedList/out/production/LinkedList/com/tutorials/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedList/out/production/LinkedList/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedList/src/com/tutorials/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedList/src/com/tutorials/Demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedList/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedListChallenge/LinkedListChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedListChallenge/out/production/LinkedListChallenge/com/tutorials/Album.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedListChallenge/out/production/LinkedListChallenge/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedListChallenge/out/production/LinkedListChallenge/com/tutorials/Song.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedListChallenge/src/com/tutorials/Album.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedListChallenge/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/LinkedListChallenge/src/com/tutorials/Song.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/Reverse Array Challenge/Reverse Array Challenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/Reverse Array Challenge/Reverse Array Challenge1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/Reverse Array Challenge/out/production/Reverse Array Challenge/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/Reverse Array Challenge/src/com/tutorials/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/SimpleBankingApp/SimpleBankingApp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/SimpleBankingApp/out/production/SimpleBankingApp/com/tutorials/Bank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/SimpleBankingApp/out/production/SimpleBankingApp/com/tutorials/Branch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/SimpleBankingApp/out/production/SimpleBankingApp/com/tutorials/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/SimpleBankingApp/out/production/SimpleBankingApp/com/tutorials/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/SimpleBankingApp/src/com/tutorials/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/SimpleBankingApp/src/com/tutorials/Branch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/SimpleBankingApp/src/com/tutorials/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 9 Arrays/SimpleBankingApp/src/com/tutorials/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zP3uH9QJLTPcd96ls8F8P3HHlH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d52a3a1-8a29-4105-b361-31e28102ed02" name="Changes" comment="" />
+      <created>1634036116555</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634036116555</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
